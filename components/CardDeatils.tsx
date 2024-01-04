@@ -2,13 +2,13 @@ import { Fragment } from "react";
 import Image from "next/image";
 
 import { Dialog, Transition } from "@headlessui/react";
-import { carProps } from "@/constants/types";
+import { CarProps } from "@/constants/types";
 // import { generateCarImageUrl } from "@/utils";
 
 interface CarDetailsProps {
   open: boolean;
   closeModal: () => void;
-  car: carProps;
+  car: CarProps;
 }
 
 const CarDetails = ({ open, closeModal, car }: CarDetailsProps) => (
